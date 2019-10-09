@@ -1,0 +1,42 @@
+{
+    "name": "gitlab-mr-reminder",
+    "author": {
+        "email": "david@kagerer.co",
+        "name": "David Kagerer"
+    },
+    "version": "0.0.1",
+    "description": "Sends gitlab mr reminder to slack",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "build": "tsc",
+        "watch": "concurrently \"tsc -w\" \"nodemon --watch dist dist/index.js\"",
+        "test": "jest"
+    },
+    "bin": {
+        "gitlab-mr-reminder": "./dist/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/c0un7-z3r0/gitlab-mr-reminder.git"
+    },
+    "keywords": [
+        "gitlab",
+        "git",
+        "slack",
+        "reminder"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@slack/webhook": "^5.0.2",
+        "got": "^9.6.0"
+    },
+    "devDependencies": {
+        "@types/got": "^9.6.7",
+        "concurrently": "^5.0.0",
+        "jest": "^24.9.0",
+        "nodemon": "^1.19.3",
+        "prettier": "1.18.2",
+        "typescript": "^3.6.3"
+    }
+}
