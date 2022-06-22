@@ -29,7 +29,7 @@
     "license": "MIT",
     "dependencies": {
         "@slack/webhook": "^5.0.2",
-        "got": "^9.6.0"
+        "got": "^11.8.5"
     },
     "devDependencies": {
         "@types/got": "^9.6.7",
